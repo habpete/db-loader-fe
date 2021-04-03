@@ -1,8 +1,9 @@
+import { Body } from './body/render'
+import { Menu } from './menu/render'
+
 declare var require: any
 
 const ReactDom = require('react-dom')
 
-import {} from './body.ts'
-
-ReactDom.render(<Main />, document.getElementById('root'))
+ReactDom.render(<Body />, document.getElementById('root'));
 ReactDom.render(<Menu />, document.getElementById('navigation'))
