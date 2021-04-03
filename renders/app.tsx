@@ -1,3 +1,5 @@
+import { Menu } from "./menu";
+
 declare var require: any
 
 const React = require('react')
@@ -12,3 +14,4 @@ export class Main extends React.Component {
 }
 
 ReactDom.render(<Main />, document.getElementById('root'))
+ReactDom.render(<Menu />, document.getElementById('navigation'))
